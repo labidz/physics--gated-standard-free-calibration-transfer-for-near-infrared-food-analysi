@@ -1,0 +1,24 @@
+{
+  "name": "potato",
+  "n": 26,
+  "p": 1050,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "snv",
+  "axis_range": [
+    400.0,
+    2498.0
+  ],
+  "targets": {
+    "starch": "reg",
+    "PEU": "reg",
+    "modulus20": "reg",
+    "stress20": "reg"
+  },
+  "domains": [],
+  "has_official_split": false,
+  "source": "Thybo et al.; models.life.ku.dk Texture_Potatoes; CRAN multiblock",
+  "licence": "GPL (R package data)",
+  "instrument": "Vis-NIR 400-2498 nm (raw tubers)",
+  "notes": "n=26: mechanism / case analysis only (LOOCV)."
+}

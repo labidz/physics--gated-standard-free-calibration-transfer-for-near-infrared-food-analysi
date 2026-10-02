@@ -1,0 +1,32 @@
+{
+  "name": "plum",
+  "n": 4779,
+  "p": 228,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    901.032470703125,
+    1700.7918701171875
+  ],
+  "targets": {
+    "SSC": "reg",
+    "pH": "reg",
+    "weight": "reg",
+    "SRF": "reg",
+    "MFF": "reg",
+    "LS": "reg",
+    "AF": "reg",
+    "LW": "reg"
+  },
+  "domains": [
+    "cultivar",
+    "batch",
+    "fold"
+  ],
+  "has_official_split": false,
+  "source": "PlumSPECTRA-data (github.com/707728642li/PlumSPECTRA-data, commit cf4959d, 2026-08-20)",
+  "licence": "Public; reuse terms pending institutional confirmation (per data card)",
+  "instrument": "NIR 901-1701 nm (228 bands)",
+  "notes": "Primary QC cohort. Frozen 5 outer folds used as the CV outer loop. Implausible trait values set to NaN: {'pH': 5, 'SSC': 3, 'weight': 2}."
+}

@@ -1,0 +1,23 @@
+{
+  "name": "tecator",
+  "n": 215,
+  "p": 100,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    850.0,
+    1050.0
+  ],
+  "targets": {
+    "moisture": "reg",
+    "fat": "reg",
+    "protein": "reg"
+  },
+  "domains": [],
+  "has_official_split": true,
+  "source": "Tecator / StatLib (Borggaard & Thodberg 1992), CRAN caret",
+  "licence": "Public (StatLib)",
+  "instrument": "Tecator Infratec NIT 850-1050 nm",
+  "notes": "Conventional split: first 172 train, last 43 test; duplicate spectra grouped."
+}

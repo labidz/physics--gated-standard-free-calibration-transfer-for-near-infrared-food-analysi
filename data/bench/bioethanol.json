@@ -1,0 +1,22 @@
+{
+  "name": "bioethanol",
+  "n": 166,
+  "p": 235,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "deriv1",
+  "axis_range": [
+    1115.0,
+    2285.0
+  ],
+  "targets": {
+    "glucose": "reg",
+    "ethanol": "reg"
+  },
+  "domains": [],
+  "has_official_split": false,
+  "source": "Liebmann et al. (2009) Anal. Chim. Acta; CRAN chemometrics",
+  "licence": "GPL (R package data)",
+  "instrument": "NIR transmission 1115-2285 nm",
+  "notes": "Published as first-derivative spectra; rye/wheat/corn mashes."
+}

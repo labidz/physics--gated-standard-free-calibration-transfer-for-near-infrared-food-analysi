@@ -1,0 +1,24 @@
+{
+  "name": "cookie",
+  "n": 72,
+  "p": 700,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    1100.0,
+    2498.0
+  ],
+  "targets": {
+    "fat": "reg",
+    "sucrose": "reg",
+    "dry_flour": "reg",
+    "water": "reg"
+  },
+  "domains": [],
+  "has_official_split": true,
+  "source": "Osborne et al. (1984); Brown, Fearn & Vannucci (2001); CRAN ppls",
+  "licence": "GPL (R package data)",
+  "instrument": "NIR reflectance 1100-2498 nm",
+  "notes": "Designed biscuit-dough recipes (near closure). Official 40/32 split."
+}

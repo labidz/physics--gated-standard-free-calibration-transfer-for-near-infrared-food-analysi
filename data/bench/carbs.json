@@ -1,0 +1,25 @@
+{
+  "name": "carbs",
+  "n": 24,
+  "p": 1401,
+  "axis_unit": "raman_shift",
+  "modality": "raman",
+  "signal": "raman",
+  "axis_range": [
+    200.0,
+    1600.0
+  ],
+  "targets": {
+    "fructose": "reg",
+    "lactose": "reg",
+    "ribose": "reg"
+  },
+  "domains": [
+    "role"
+  ],
+  "has_official_split": false,
+  "source": "CRAN mdatools (Kucheryavskiy)",
+  "licence": "MIT (package data)",
+  "instrument": "Raman",
+  "notes": "21 mixtures with known concentrations + 3 pure-component spectra (identifiability ground truth)."
+}

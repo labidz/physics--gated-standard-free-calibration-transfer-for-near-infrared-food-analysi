@@ -1,0 +1,26 @@
+{
+  "name": "corn",
+  "n": 240,
+  "p": 700,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    1100.0,
+    2498.0
+  ],
+  "targets": {
+    "moisture": "reg",
+    "oil": "reg",
+    "protein": "reg",
+    "starch": "reg"
+  },
+  "domains": [
+    "instrument"
+  ],
+  "has_official_split": false,
+  "source": "Eigenvector corn data (Cargill), via JchemoData.jl",
+  "licence": "Public demonstration data",
+  "instrument": "3 NIR spectrometers m5, mp5, mp6 (1100-2498 nm)",
+  "notes": "Same 80 samples on 3 instruments; NBS glass standards in corn_nbs.npz."
+}

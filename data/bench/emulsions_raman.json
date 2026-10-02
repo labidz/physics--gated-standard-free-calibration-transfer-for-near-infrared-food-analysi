@@ -1,0 +1,22 @@
+{
+  "name": "emulsions_raman",
+  "n": 69,
+  "p": 1096,
+  "axis_unit": "raman_shift",
+  "modality": "raman",
+  "signal": "raman",
+  "axis_range": [
+    675.0,
+    1770.0
+  ],
+  "targets": {
+    "PUFAtot": "reg",
+    "PUFAfat": "reg"
+  },
+  "domains": [],
+  "has_official_split": false,
+  "source": "Afseth et al. (2005); CRAN multiblock (Liland)",
+  "licence": "GPL (R package data)",
+  "instrument": "Raman on the same 69 fat/water/protein emulsions",
+  "notes": "Same samples measured by NIR and Raman."
+}

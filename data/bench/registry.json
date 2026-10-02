@@ -1,0 +1,600 @@
+[
+  {
+    "name": "mango",
+    "n": 11691,
+    "p": 281,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      309.0,
+      1149.0
+    ],
+    "targets": {
+      "DM": "reg"
+    },
+    "domains": [
+      "season",
+      "cultivar",
+      "region",
+      "temperature",
+      "set"
+    ],
+    "has_official_split": true,
+    "source": "Anderson et al. (2020, 2021), Postharvest Biol. Technol.; Mendeley Data 46htwnp833 (via github.com/dario-passos)",
+    "licence": "CC BY 4.0 (Mendeley Data)",
+    "instrument": "Felix F750 handheld Vis-NIR (interactance)",
+    "notes": "Official split: Cal+Tuning (seasons 1-3) -> Val Ext (season 4). Groups = population x season."
+  },
+  {
+    "name": "plum",
+    "n": 4779,
+    "p": 228,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      901.032470703125,
+      1700.7918701171875
+    ],
+    "targets": {
+      "SSC": "reg",
+      "pH": "reg",
+      "weight": "reg",
+      "SRF": "reg",
+      "MFF": "reg",
+      "LS": "reg",
+      "AF": "reg",
+      "LW": "reg"
+    },
+    "domains": [
+      "cultivar",
+      "batch",
+      "fold"
+    ],
+    "has_official_split": false,
+    "source": "PlumSPECTRA-data (github.com/707728642li/PlumSPECTRA-data, commit cf4959d, 2026-08-20)",
+    "licence": "Public; reuse terms pending institutional confirmation (per data card)",
+    "instrument": "NIR 901-1701 nm (228 bands)",
+    "notes": "Primary QC cohort. Frozen 5 outer folds used as the CV outer loop. Implausible trait values set to NaN: {'pH': 5, 'SSC': 3, 'weight': 2}."
+  },
+  {
+    "name": "ch2021",
+    "n": 3774,
+    "p": 256,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      302.5,
+      1142.3
+    ],
+    "targets": {
+      "y": "reg"
+    },
+    "domains": [
+      "instrument",
+      "role"
+    ],
+    "has_official_split": true,
+    "source": "Chemometrics 2021 challenge (chemom2021.sciencesconf.org), via JchemoData.jl",
+    "licence": "Challenge data, redistributed in JchemoData.jl",
+    "instrument": "7 Vis-NIR units of one brand (300-1100 nm)",
+    "notes": "Fruit; property unspecified by organisers. Relative reflectance converted to log10(1/R). E1 = cal (unit 1) -> val unit 1. Units 2-7 used for transfer (E3). 245 transfer standards on all units."
+  },
+  {
+    "name": "ch2018",
+    "n": 4075,
+    "p": 680,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      1120.0,
+      2478.0
+    ],
+    "targets": {
+      "protein": "reg",
+      "product": "cls"
+    },
+    "domains": [
+      "product",
+      "label"
+    ],
+    "has_official_split": true,
+    "source": "Chemometrics 2018 challenge (Paris), corrected by Lesnoff (JchemoData.jl)",
+    "licence": "Challenge data, redistributed in JchemoData.jl",
+    "instrument": "NIR 1120-2478 nm",
+    "notes": "Reflectance converted to log10(1/R). Protein in 10 food/feed products (wheat, milk powder & whey, soya meal, sunflower seed, silage...)."
+  },
+  {
+    "name": "corn",
+    "n": 240,
+    "p": 700,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      1100.0,
+      2498.0
+    ],
+    "targets": {
+      "moisture": "reg",
+      "oil": "reg",
+      "protein": "reg",
+      "starch": "reg"
+    },
+    "domains": [
+      "instrument"
+    ],
+    "has_official_split": false,
+    "source": "Eigenvector corn data (Cargill), via JchemoData.jl",
+    "licence": "Public demonstration data",
+    "instrument": "3 NIR spectrometers m5, mp5, mp6 (1100-2498 nm)",
+    "notes": "Same 80 samples on 3 instruments; NBS glass standards in corn_nbs.npz."
+  },
+  {
+    "name": "wheat",
+    "n": 523,
+    "p": 100,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      850.0,
+      1048.0
+    ],
+    "targets": {
+      "protein": "reg"
+    },
+    "domains": [
+      "time"
+    ],
+    "has_official_split": true,
+    "source": "Pedersen et al. (2002); Cui & Fearn (2018) dataset 3 (ucphchemometrics.com), via JchemoData.jl",
+    "licence": "Public research data",
+    "instrument": "NIT single-kernel 850-1048 nm",
+    "notes": "Test kernels stored ~2 months longer (temporal drift)."
+  },
+  {
+    "name": "cassava",
+    "n": 280,
+    "p": 1050,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      400.0,
+      2498.0
+    ],
+    "targets": {
+      "TBC": "reg"
+    },
+    "domains": [
+      "year"
+    ],
+    "has_official_split": true,
+    "source": "Davrieux et al. (2016); Lesnoff et al. (2020); CRAN rchemo",
+    "licence": "GPL (R package data)",
+    "instrument": "FOSS NIRSystems 400-2498 nm",
+    "notes": "Beta-carotene in cassava roots; breeding years 2009-2013."
+  },
+  {
+    "name": "sorghum",
+    "n": 1085,
+    "p": 700,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "deriv1",
+    "axis_range": [
+      1100.0,
+      2498.0
+    ],
+    "targets": {
+      "CP": "reg",
+      "NDF": "reg",
+      "ADF": "reg",
+      "DM": "reg"
+    },
+    "domains": [],
+    "has_official_split": true,
+    "source": "JchemoData.jl (sorghum)",
+    "licence": "Redistributed in JchemoData.jl",
+    "instrument": "NIR 1100-2498 nm",
+    "notes": "Published as first-derivative spectra (r = 0.90 with d/dlambda of log(1/R)). No official split: fixed random 75/25 holdout (seed 0)."
+  },
+  {
+    "name": "forages",
+    "n": 485,
+    "p": 700,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "snv_sg2",
+    "axis_range": [
+      1100.0,
+      2498.0
+    ],
+    "targets": {
+      "DM": "reg",
+      "NDF": "reg"
+    },
+    "domains": [
+      "type"
+    ],
+    "has_official_split": true,
+    "source": "CIRAD UMR Selmet, via JchemoData.jl (forages2)",
+    "licence": "Released preprocessed only (SNV + SG 2nd derivative)",
+    "instrument": "FOSS NIRSystems 1100-2498 nm",
+    "notes": "Published only after SNV + Savitzky-Golay 2nd derivative."
+  },
+  {
+    "name": "pears",
+    "n": 600,
+    "p": 1005,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      450.266,
+      1146.672
+    ],
+    "targets": {
+      "Brix": "reg"
+    },
+    "domains": [],
+    "has_official_split": true,
+    "source": "Kaneko & Funatsu (2015) SVR example data (github.com/dario-passos)",
+    "licence": "Research example data",
+    "instrument": "Vis-NIR 433-1147 nm",
+    "notes": "Reflectance converted to log10(1/R); <450 nm dropped. Fixed random 75/25 holdout (seed 1)."
+  },
+  {
+    "name": "grapes",
+    "n": 250,
+    "p": 211,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      402.615738,
+      1098.314308
+    ],
+    "targets": {
+      "variety": "cls"
+    },
+    "domains": [
+      "date"
+    ],
+    "has_official_split": true,
+    "source": "Roger et al. (2005), Chemom. Intell. Lab. Syst.; via JchemoData.jl",
+    "licence": "Research data",
+    "instrument": "Zeiss MMS1 transmission 303-1147 nm",
+    "notes": "Published as raw detector counts; converted to pseudo-absorbance -log10(I / I_ref), I_ref = per-wavelength maximum of training spectra; 400-1100 nm kept. Official split by acquisition batch."
+  },
+  {
+    "name": "tecator",
+    "n": 215,
+    "p": 100,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      850.0,
+      1050.0
+    ],
+    "targets": {
+      "moisture": "reg",
+      "fat": "reg",
+      "protein": "reg"
+    },
+    "domains": [],
+    "has_official_split": true,
+    "source": "Tecator / StatLib (Borggaard & Thodberg 1992), CRAN caret",
+    "licence": "Public (StatLib)",
+    "instrument": "Tecator Infratec NIT 850-1050 nm",
+    "notes": "Conventional split: first 172 train, last 43 test; duplicate spectra grouped."
+  },
+  {
+    "name": "cookie",
+    "n": 72,
+    "p": 700,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      1100.0,
+      2498.0
+    ],
+    "targets": {
+      "fat": "reg",
+      "sucrose": "reg",
+      "dry_flour": "reg",
+      "water": "reg"
+    },
+    "domains": [],
+    "has_official_split": true,
+    "source": "Osborne et al. (1984); Brown, Fearn & Vannucci (2001); CRAN ppls",
+    "licence": "GPL (R package data)",
+    "instrument": "NIR reflectance 1100-2498 nm",
+    "notes": "Designed biscuit-dough recipes (near closure). Official 40/32 split."
+  },
+  {
+    "name": "bioethanol",
+    "n": 166,
+    "p": 235,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "deriv1",
+    "axis_range": [
+      1115.0,
+      2285.0
+    ],
+    "targets": {
+      "glucose": "reg",
+      "ethanol": "reg"
+    },
+    "domains": [],
+    "has_official_split": false,
+    "source": "Liebmann et al. (2009) Anal. Chim. Acta; CRAN chemometrics",
+    "licence": "GPL (R package data)",
+    "instrument": "NIR transmission 1115-2285 nm",
+    "notes": "Published as first-derivative spectra; rye/wheat/corn mashes."
+  },
+  {
+    "name": "ligno",
+    "n": 1650,
+    "p": 594,
+    "axis_unit": "cm-1",
+    "modality": "mir",
+    "signal": "absorbance",
+    "axis_range": [
+      900.0,
+      1700.0
+    ],
+    "targets": {
+      "glucose": "reg",
+      "xylose": "reg",
+      "acetic_acid": "reg",
+      "ethanol": "reg",
+      "furfural": "reg"
+    },
+    "domains": [
+      "role"
+    ],
+    "has_official_split": true,
+    "source": "DTU PROSYS 2019 lignocellulosic ethanol fermentation (chemotools / dtuprosys, PyPI)",
+    "licence": "MIT (package data)",
+    "instrument": "ATR-MIR flow cell, 428-1833 cm-1 (900-1700 cm-1 kept)",
+    "notes": "Train: semi-synthetic off-line standards (glucose). Test: on-line spectra, HPLC at 34 times (nearest spectrum). Spectrum timing inferred as uniform over the run."
+  },
+  {
+    "name": "mayonnaise",
+    "n": 162,
+    "p": 351,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      1100.0,
+      2500.0
+    ],
+    "targets": {
+      "oil": "cls"
+    },
+    "domains": [
+      "oil"
+    ],
+    "has_official_split": true,
+    "source": "Indahl et al. (1999) Chemom. Intell. Lab. Syst.; CRAN pls",
+    "licence": "GPL (R package data)",
+    "instrument": "NIR 1100-2500 nm",
+    "notes": "54 samples x triplicate scans; 6 oil types; official train flag."
+  },
+  {
+    "name": "oregano",
+    "n": 166,
+    "p": 649,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "snv",
+    "axis_range": [
+      1111.3127526361172,
+      2500.1856387836797
+    ],
+    "targets": {
+      "class": "cls"
+    },
+    "domains": [],
+    "has_official_split": true,
+    "source": "Rodionova & Pomerantsev (2020); Kucheryavskiy et al. (2024); via JchemoData.jl",
+    "licence": "Research data (mda.tools)",
+    "instrument": "Nicolet 6700 FT-NIR 9000-4000 cm-1 (axis converted to nm)",
+    "notes": "SNV-preprocessed. Train: oregano only. Test: oregano, non-target herbs, suspicious."
+  },
+  {
+    "name": "fishoil",
+    "n": 126,
+    "p": 2901,
+    "axis_unit": "raman_shift",
+    "modality": "raman",
+    "signal": "raman",
+    "axis_range": [
+      300.0,
+      3200.0
+    ],
+    "targets": {
+      "iodine": "reg"
+    },
+    "domains": [],
+    "has_official_split": false,
+    "source": "Afseth et al.; CRAN EMSC (Liland)",
+    "licence": "GPL (R package data)",
+    "instrument": "Raman",
+    "notes": "42 oils x 3 replicates; strong fluorescence background. Range 300-3200 cm-1 kept."
+  },
+  {
+    "name": "emulsions_nir",
+    "n": 69,
+    "p": 301,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      1400.0,
+      2000.0
+    ],
+    "targets": {
+      "PUFAtot": "reg",
+      "PUFAfat": "reg"
+    },
+    "domains": [],
+    "has_official_split": false,
+    "source": "Afseth et al. (2005); CRAN multiblock (Liland)",
+    "licence": "GPL (R package data)",
+    "instrument": "NIR on the same 69 fat/water/protein emulsions",
+    "notes": "Same samples measured by NIR and Raman."
+  },
+  {
+    "name": "emulsions_raman",
+    "n": 69,
+    "p": 1096,
+    "axis_unit": "raman_shift",
+    "modality": "raman",
+    "signal": "raman",
+    "axis_range": [
+      675.0,
+      1770.0
+    ],
+    "targets": {
+      "PUFAtot": "reg",
+      "PUFAfat": "reg"
+    },
+    "domains": [],
+    "has_official_split": false,
+    "source": "Afseth et al. (2005); CRAN multiblock (Liland)",
+    "licence": "GPL (R package data)",
+    "instrument": "Raman on the same 69 fat/water/protein emulsions",
+    "notes": "Same samples measured by NIR and Raman."
+  },
+  {
+    "name": "carbs",
+    "n": 24,
+    "p": 1401,
+    "axis_unit": "raman_shift",
+    "modality": "raman",
+    "signal": "raman",
+    "axis_range": [
+      200.0,
+      1600.0
+    ],
+    "targets": {
+      "fructose": "reg",
+      "lactose": "reg",
+      "ribose": "reg"
+    },
+    "domains": [
+      "role"
+    ],
+    "has_official_split": false,
+    "source": "CRAN mdatools (Kucheryavskiy)",
+    "licence": "MIT (package data)",
+    "instrument": "Raman",
+    "notes": "21 mixtures with known concentrations + 3 pure-component spectra (identifiability ground truth)."
+  },
+  {
+    "name": "potato",
+    "n": 26,
+    "p": 1050,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "snv",
+    "axis_range": [
+      400.0,
+      2498.0
+    ],
+    "targets": {
+      "starch": "reg",
+      "PEU": "reg",
+      "modulus20": "reg",
+      "stress20": "reg"
+    },
+    "domains": [],
+    "has_official_split": false,
+    "source": "Thybo et al.; models.life.ku.dk Texture_Potatoes; CRAN multiblock",
+    "licence": "GPL (R package data)",
+    "instrument": "Vis-NIR 400-2498 nm (raw tubers)",
+    "notes": "n=26: mechanism / case analysis only (LOOCV)."
+  },
+  {
+    "name": "cereal",
+    "n": 15,
+    "p": 145,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "deriv1",
+    "axis_range": [
+      1126.0,
+      2278.0
+    ],
+    "targets": {
+      "Heatingvalue": "reg",
+      "C": "reg",
+      "H": "reg",
+      "N": "reg",
+      "Starch": "reg",
+      "Ash": "reg"
+    },
+    "domains": [],
+    "has_official_split": false,
+    "source": "Varmuza & Filzmoser (2009); CRAN chemometrics",
+    "licence": "GPL (R package data)",
+    "instrument": "NIR 1126-2278 nm",
+    "notes": "n=15: small-n check only (LOOCV)."
+  },
+  {
+    "name": "tablets",
+    "n": 1310,
+    "p": 650,
+    "axis_unit": "nm",
+    "modality": "vnir",
+    "signal": "absorbance",
+    "axis_range": [
+      600.0,
+      1898.0
+    ],
+    "targets": {
+      "assay": "reg"
+    },
+    "domains": [
+      "instrument"
+    ],
+    "has_official_split": true,
+    "source": "IDRC 2002 shootout (pharmaceutical tablets), via github.com/dario-passos",
+    "licence": "IDRC shootout data",
+    "instrument": "2 NIR transmission instruments 600-1898 nm",
+    "notes": "NON-FOOD control for instrument transfer only."
+  },
+  {
+    "name": "minerals",
+    "n": 303,
+    "p": 410,
+    "axis_unit": "raman_shift",
+    "modality": "raman",
+    "signal": "raman",
+    "axis_range": [
+      150.37684983322217,
+      1297.448018012008
+    ],
+    "targets": {
+      "albite": "reg",
+      "quartz": "reg",
+      "orthoclase": "reg"
+    },
+    "domains": [],
+    "has_official_split": false,
+    "source": "nirpyresearch example data (github.com/nevernervous78/nirpyresearch)",
+    "licence": "Research example data",
+    "instrument": "Raman",
+    "notes": "NON-FOOD control: 3-mineral mixtures with known fractions (closure) for identifiability."
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "name": "wheat",
+  "n": 523,
+  "p": 100,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    850.0,
+    1048.0
+  ],
+  "targets": {
+    "protein": "reg"
+  },
+  "domains": [
+    "time"
+  ],
+  "has_official_split": true,
+  "source": "Pedersen et al. (2002); Cui & Fearn (2018) dataset 3 (ucphchemometrics.com), via JchemoData.jl",
+  "licence": "Public research data",
+  "instrument": "NIT single-kernel 850-1048 nm",
+  "notes": "Test kernels stored ~2 months longer (temporal drift)."
+}

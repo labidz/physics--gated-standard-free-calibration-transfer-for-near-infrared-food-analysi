@@ -1,0 +1,26 @@
+{
+  "name": "cereal",
+  "n": 15,
+  "p": 145,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "deriv1",
+  "axis_range": [
+    1126.0,
+    2278.0
+  ],
+  "targets": {
+    "Heatingvalue": "reg",
+    "C": "reg",
+    "H": "reg",
+    "N": "reg",
+    "Starch": "reg",
+    "Ash": "reg"
+  },
+  "domains": [],
+  "has_official_split": false,
+  "source": "Varmuza & Filzmoser (2009); CRAN chemometrics",
+  "licence": "GPL (R package data)",
+  "instrument": "NIR 1126-2278 nm",
+  "notes": "n=15: small-n check only (LOOCV)."
+}

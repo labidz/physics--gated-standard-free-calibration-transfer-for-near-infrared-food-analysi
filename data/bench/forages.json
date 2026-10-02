@@ -1,0 +1,24 @@
+{
+  "name": "forages",
+  "n": 485,
+  "p": 700,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "snv_sg2",
+  "axis_range": [
+    1100.0,
+    2498.0
+  ],
+  "targets": {
+    "DM": "reg",
+    "NDF": "reg"
+  },
+  "domains": [
+    "type"
+  ],
+  "has_official_split": true,
+  "source": "CIRAD UMR Selmet, via JchemoData.jl (forages2)",
+  "licence": "Released preprocessed only (SNV + SG 2nd derivative)",
+  "instrument": "FOSS NIRSystems 1100-2498 nm",
+  "notes": "Published only after SNV + Savitzky-Golay 2nd derivative."
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ch2018",
+  "n": 4075,
+  "p": 680,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    1120.0,
+    2478.0
+  ],
+  "targets": {
+    "protein": "reg",
+    "product": "cls"
+  },
+  "domains": [
+    "product",
+    "label"
+  ],
+  "has_official_split": true,
+  "source": "Chemometrics 2018 challenge (Paris), corrected by Lesnoff (JchemoData.jl)",
+  "licence": "Challenge data, redistributed in JchemoData.jl",
+  "instrument": "NIR 1120-2478 nm",
+  "notes": "Reflectance converted to log10(1/R). Protein in 10 food/feed products (wheat, milk powder & whey, soya meal, sunflower seed, silage...)."
+}

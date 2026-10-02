@@ -1,0 +1,23 @@
+{
+  "name": "minerals",
+  "n": 303,
+  "p": 410,
+  "axis_unit": "raman_shift",
+  "modality": "raman",
+  "signal": "raman",
+  "axis_range": [
+    150.37684983322217,
+    1297.448018012008
+  ],
+  "targets": {
+    "albite": "reg",
+    "quartz": "reg",
+    "orthoclase": "reg"
+  },
+  "domains": [],
+  "has_official_split": false,
+  "source": "nirpyresearch example data (github.com/nevernervous78/nirpyresearch)",
+  "licence": "Research example data",
+  "instrument": "Raman",
+  "notes": "NON-FOOD control: 3-mineral mixtures with known fractions (closure) for identifiability."
+}

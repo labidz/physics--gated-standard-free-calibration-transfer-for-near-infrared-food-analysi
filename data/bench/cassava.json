@@ -1,0 +1,23 @@
+{
+  "name": "cassava",
+  "n": 280,
+  "p": 1050,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    400.0,
+    2498.0
+  ],
+  "targets": {
+    "TBC": "reg"
+  },
+  "domains": [
+    "year"
+  ],
+  "has_official_split": true,
+  "source": "Davrieux et al. (2016); Lesnoff et al. (2020); CRAN rchemo",
+  "licence": "GPL (R package data)",
+  "instrument": "FOSS NIRSystems 400-2498 nm",
+  "notes": "Beta-carotene in cassava roots; breeding years 2009-2013."
+}

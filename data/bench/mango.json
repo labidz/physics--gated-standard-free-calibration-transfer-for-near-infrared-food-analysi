@@ -1,0 +1,27 @@
+{
+  "name": "mango",
+  "n": 11691,
+  "p": 281,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    309.0,
+    1149.0
+  ],
+  "targets": {
+    "DM": "reg"
+  },
+  "domains": [
+    "season",
+    "cultivar",
+    "region",
+    "temperature",
+    "set"
+  ],
+  "has_official_split": true,
+  "source": "Anderson et al. (2020, 2021), Postharvest Biol. Technol.; Mendeley Data 46htwnp833 (via github.com/dario-passos)",
+  "licence": "CC BY 4.0 (Mendeley Data)",
+  "instrument": "Felix F750 handheld Vis-NIR (interactance)",
+  "notes": "Official split: Cal+Tuning (seasons 1-3) -> Val Ext (season 4). Groups = population x season."
+}

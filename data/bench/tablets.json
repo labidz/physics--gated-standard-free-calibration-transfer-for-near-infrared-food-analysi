@@ -1,0 +1,23 @@
+{
+  "name": "tablets",
+  "n": 1310,
+  "p": 650,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    600.0,
+    1898.0
+  ],
+  "targets": {
+    "assay": "reg"
+  },
+  "domains": [
+    "instrument"
+  ],
+  "has_official_split": true,
+  "source": "IDRC 2002 shootout (pharmaceutical tablets), via github.com/dario-passos",
+  "licence": "IDRC shootout data",
+  "instrument": "2 NIR transmission instruments 600-1898 nm",
+  "notes": "NON-FOOD control for instrument transfer only."
+}

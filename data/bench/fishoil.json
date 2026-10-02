@@ -1,0 +1,21 @@
+{
+  "name": "fishoil",
+  "n": 126,
+  "p": 2901,
+  "axis_unit": "raman_shift",
+  "modality": "raman",
+  "signal": "raman",
+  "axis_range": [
+    300.0,
+    3200.0
+  ],
+  "targets": {
+    "iodine": "reg"
+  },
+  "domains": [],
+  "has_official_split": false,
+  "source": "Afseth et al.; CRAN EMSC (Liland)",
+  "licence": "GPL (R package data)",
+  "instrument": "Raman",
+  "notes": "42 oils x 3 replicates; strong fluorescence background. Range 300-3200 cm-1 kept."
+}

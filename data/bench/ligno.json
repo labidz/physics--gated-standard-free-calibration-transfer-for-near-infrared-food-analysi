@@ -1,0 +1,27 @@
+{
+  "name": "ligno",
+  "n": 1650,
+  "p": 594,
+  "axis_unit": "cm-1",
+  "modality": "mir",
+  "signal": "absorbance",
+  "axis_range": [
+    900.0,
+    1700.0
+  ],
+  "targets": {
+    "glucose": "reg",
+    "xylose": "reg",
+    "acetic_acid": "reg",
+    "ethanol": "reg",
+    "furfural": "reg"
+  },
+  "domains": [
+    "role"
+  ],
+  "has_official_split": true,
+  "source": "DTU PROSYS 2019 lignocellulosic ethanol fermentation (chemotools / dtuprosys, PyPI)",
+  "licence": "MIT (package data)",
+  "instrument": "ATR-MIR flow cell, 428-1833 cm-1 (900-1700 cm-1 kept)",
+  "notes": "Train: semi-synthetic off-line standards (glucose). Test: on-line spectra, HPLC at 34 times (nearest spectrum). Spectrum timing inferred as uniform over the run."
+}

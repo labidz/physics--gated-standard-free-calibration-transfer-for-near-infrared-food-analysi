@@ -1,0 +1,22 @@
+{
+  "name": "emulsions_nir",
+  "n": 69,
+  "p": 301,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    1400.0,
+    2000.0
+  ],
+  "targets": {
+    "PUFAtot": "reg",
+    "PUFAfat": "reg"
+  },
+  "domains": [],
+  "has_official_split": false,
+  "source": "Afseth et al. (2005); CRAN multiblock (Liland)",
+  "licence": "GPL (R package data)",
+  "instrument": "NIR on the same 69 fat/water/protein emulsions",
+  "notes": "Same samples measured by NIR and Raman."
+}

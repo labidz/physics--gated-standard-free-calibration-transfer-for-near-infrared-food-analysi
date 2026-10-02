@@ -1,0 +1,24 @@
+{
+  "name": "ch2021",
+  "n": 3774,
+  "p": 256,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    302.5,
+    1142.3
+  ],
+  "targets": {
+    "y": "reg"
+  },
+  "domains": [
+    "instrument",
+    "role"
+  ],
+  "has_official_split": true,
+  "source": "Chemometrics 2021 challenge (chemom2021.sciencesconf.org), via JchemoData.jl",
+  "licence": "Challenge data, redistributed in JchemoData.jl",
+  "instrument": "7 Vis-NIR units of one brand (300-1100 nm)",
+  "notes": "Fruit; property unspecified by organisers. Relative reflectance converted to log10(1/R). E1 = cal (unit 1) -> val unit 1. Units 2-7 used for transfer (E3). 245 transfer standards on all units."
+}

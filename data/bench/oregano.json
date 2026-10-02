@@ -1,0 +1,21 @@
+{
+  "name": "oregano",
+  "n": 166,
+  "p": 649,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "snv",
+  "axis_range": [
+    1111.3127526361172,
+    2500.1856387836797
+  ],
+  "targets": {
+    "class": "cls"
+  },
+  "domains": [],
+  "has_official_split": true,
+  "source": "Rodionova & Pomerantsev (2020); Kucheryavskiy et al. (2024); via JchemoData.jl",
+  "licence": "Research data (mda.tools)",
+  "instrument": "Nicolet 6700 FT-NIR 9000-4000 cm-1 (axis converted to nm)",
+  "notes": "SNV-preprocessed. Train: oregano only. Test: oregano, non-target herbs, suspicious."
+}

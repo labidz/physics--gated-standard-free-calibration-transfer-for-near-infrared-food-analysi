@@ -1,0 +1,21 @@
+{
+  "name": "pears",
+  "n": 600,
+  "p": 1005,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    450.266,
+    1146.672
+  ],
+  "targets": {
+    "Brix": "reg"
+  },
+  "domains": [],
+  "has_official_split": true,
+  "source": "Kaneko & Funatsu (2015) SVR example data (github.com/dario-passos)",
+  "licence": "Research example data",
+  "instrument": "Vis-NIR 433-1147 nm",
+  "notes": "Reflectance converted to log10(1/R); <450 nm dropped. Fixed random 75/25 holdout (seed 1)."
+}

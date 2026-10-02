@@ -1,0 +1,23 @@
+{
+  "name": "mayonnaise",
+  "n": 162,
+  "p": 351,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    1100.0,
+    2500.0
+  ],
+  "targets": {
+    "oil": "cls"
+  },
+  "domains": [
+    "oil"
+  ],
+  "has_official_split": true,
+  "source": "Indahl et al. (1999) Chemom. Intell. Lab. Syst.; CRAN pls",
+  "licence": "GPL (R package data)",
+  "instrument": "NIR 1100-2500 nm",
+  "notes": "54 samples x triplicate scans; 6 oil types; official train flag."
+}

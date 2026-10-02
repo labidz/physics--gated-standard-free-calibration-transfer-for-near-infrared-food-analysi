@@ -1,0 +1,23 @@
+{
+  "name": "grapes",
+  "n": 250,
+  "p": 211,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "absorbance",
+  "axis_range": [
+    402.615738,
+    1098.314308
+  ],
+  "targets": {
+    "variety": "cls"
+  },
+  "domains": [
+    "date"
+  ],
+  "has_official_split": true,
+  "source": "Roger et al. (2005), Chemom. Intell. Lab. Syst.; via JchemoData.jl",
+  "licence": "Research data",
+  "instrument": "Zeiss MMS1 transmission 303-1147 nm",
+  "notes": "Published as raw detector counts; converted to pseudo-absorbance -log10(I / I_ref), I_ref = per-wavelength maximum of training spectra; 400-1100 nm kept. Official split by acquisition batch."
+}

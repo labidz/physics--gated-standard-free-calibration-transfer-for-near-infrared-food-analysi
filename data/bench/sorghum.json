@@ -1,0 +1,24 @@
+{
+  "name": "sorghum",
+  "n": 1085,
+  "p": 700,
+  "axis_unit": "nm",
+  "modality": "vnir",
+  "signal": "deriv1",
+  "axis_range": [
+    1100.0,
+    2498.0
+  ],
+  "targets": {
+    "CP": "reg",
+    "NDF": "reg",
+    "ADF": "reg",
+    "DM": "reg"
+  },
+  "domains": [],
+  "has_official_split": true,
+  "source": "JchemoData.jl (sorghum)",
+  "licence": "Redistributed in JchemoData.jl",
+  "instrument": "NIR 1100-2498 nm",
+  "notes": "Published as first-derivative spectra (r = 0.90 with d/dlambda of log(1/R)). No official split: fixed random 75/25 holdout (seed 0)."
+}
